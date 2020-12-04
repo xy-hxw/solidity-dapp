@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pet</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+</head>
+<body>
+
+	<div style="display: flex;justify-content: center;">
+		<div style="text-align:left;width: 600px;">
+			<div>
+				<span>address：</span><span id="address"></span><br>
+				<span>name：</span><span id="name"></span><br>
+				<span>symbol：</span><span id="symbol"></span><br>
+				<span>totalSupply：</span><span id="totalSupply"></span><br>
+				<span>balance：</span><span id="balance"></span>
+			</div>
+			<br>
+			<br>
+			<div style="text-align:left;width: 600px;">
+				toAddress: <input id="to" type="text" name="to" style="width: 300px;"/>
+				<button onclick="send()">Send</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="http://libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/web3.min.js"></script>
+	<script src="js/truffle-contract.js"></script>
+	
+	<script src="js/token.js"></script>
+</body>
+</html>
